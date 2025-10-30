@@ -29,7 +29,7 @@ Detekcja ludzi przez model YOLOv11n
 
 Estymacja głębi (odległość w metrach)
 
-Obliczanie wysokosci osoby
+Obliczanie odległosci obiektu od kamery
 
 Resetowanie trackera w określonych interwałach
 
@@ -57,7 +57,7 @@ Wykrywanie i śledzenie osób
 
 Wygładzanie pozycji (filtr eksponencjalny)
 
-Obliczanie przybliżonej odległości
+Obliczanie wysokosci osoby
 
 Komunikacja przez port szeregowy
 
