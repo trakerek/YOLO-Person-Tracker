@@ -151,6 +151,4 @@ python3 stereo_tracker.py
     Zapis ścieżki ruchu obiektu.
 
 📸 Autor
-
-Twój Nick / Imię i Nazwisko
-(dopisz swój kontakt, jeśli chcesz)
+Traker
