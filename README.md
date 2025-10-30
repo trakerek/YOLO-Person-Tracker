@@ -29,6 +29,8 @@ Detekcja ludzi przez model YOLOv11n
 
 Estymacja głębi (odległość w metrach)
 
+Obliczanie wysokosci osoby
+
 Resetowanie trackera w określonych interwałach
 
 Serial komunikacja z Arduino
