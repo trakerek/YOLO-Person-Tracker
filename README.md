@@ -89,3 +89,68 @@ Python 3.8+
 CUDA (jeśli używasz GPU)
 
 Zainstalowane biblioteki:
+    pip install ultralytics opencv-python pyserial filterpy numpy
+
+⚡ Arduino:
+
+    Arduino UNO / Nano / Mega
+
+    Biblioteka Servo.h (wbudowana)
+
+    Dwa serwomechanizmy (np. SG90)
+
+    Joystick (2 analogowe + przycisk)
+
+🧭 Sposób uruchomienia
+1️⃣ Wersja z jedną kamerą:
+
+python3 single_cam_tracker.py
+
+2️⃣ Wersja stereo:
+
+python3 stereo_tracker.py
+
+3️⃣ Po stronie Arduino:
+
+    Otwórz servo_controller.ino w Arduino IDE.
+
+    Wgraj kod na płytkę.
+
+    Połącz Arduino z komputerem przez USB (np. /dev/ttyACM0).
+
+    Upewnij się, że port COM jest ten sam co w skryptach Python.
+
+📊 Zasada działania
+
+    YOLO wykrywa osobę w kadrze.
+
+    Skrypt wylicza środek wykrytego obiektu (lub jego średnią z wielu detekcji).
+
+    Wynikowe współrzędne (x, y) są wysyłane do Arduino przez port szeregowy.
+
+    Arduino przelicza wartości na kąty serw i obraca je w odpowiednim kierunku.
+
+    Jeśli w wersji stereo — system dodatkowo oblicza odległość w metrach.
+
+🎥 Efekt działania
+
+    Kamera lub głowica porusza się automatycznie, podążając za osobą w czasie rzeczywistym.
+
+    W wersji stereo kamera może reagować również na przybliżanie/oddalanie obiektu.
+
+🧠 Możliwe rozszerzenia
+
+    Wykrywanie twarzy lub konkretnych obiektów (np. classes=[0, 67]).
+
+    Zastosowanie lepszego modelu YOLO (np. yolov11s.pt).
+
+    Automatyczne sterowanie zoomem kamery.
+
+    Wysyłanie danych o odległości na ekran LCD.
+
+    Zapis ścieżki ruchu obiektu.
+
+📸 Autor
+
+Twój Nick / Imię i Nazwisko
+(dopisz swój kontakt, jeśli chcesz)
